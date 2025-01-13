@@ -17,26 +17,37 @@
 
 ## 💻 Sobre o projeto
 
-<p align="justify"></p>
+<p align="justify">
+Este repositório contém o código e o guia passo a passo para criar, monetizar e escalar um Micro SaaS. O projeto foi desenvolvido com foco em práticas modernas, ferramentas seguras e resultados rápidos, permitindo que você implemente um aplicativo SaaS de pequeno porte que pode ser facilmente gerido, escalado e monetizado.
+</p>
 
 ## ⚙️ Descrição
 
-<p align="justify"></p>
+<p align="justify">
+<strong>Micro SaaS</strong>  é uma aplicação que resolve problemas específicos de nicho para uma base de clientes engajada. Este projeto foi desenvolvido com foco em:
+</p>
+
+- **Escalabilidade**: Suporta o crescimento do negócio sem comprometer a performance.
+- **Monetização eficiente**: Inclui opções para freemium, assinaturas e outros métodos.
+- **Segurança**: Implementa autenticação e boas práticas de proteção de dados.
+
 
 ## 🎨 Layout
 
 O layout da aplicação está disponível no [Figma](https://www.figma.com/design/nyYXKhuL54nnMuvOArgVzq/Project-in-bio-(Community)-(Copy)?node-id=0-1&p=f&t=qp5NPIH2ut9UBXgx-0)
 
+**[Acesse o projeto em produção aqui!](https://seu-link-de-producao.com)**
 
 ## 🛠 Tecnologias
 
 <p align="justify">Este projeto utiliza um conjunto de tecnologias modernas para garantir uma aplicação eficiente e escalável, incluindo:</p>
 
-- ⚛️ **[React](https://reactjs.org/)**: Biblioteca JavaScript para construção de interfaces de usuário.
-- ⏭️ **[Next.js](https://nextjs.org/)**: Ferramenta de build rápida para desenvolvimento frontend.
-- 🎨 **[TailwindCSS](https://tailwindcss.com/)**: Framework CSS utilitário para estilização.
-- 🔐 **[Auth.js](https://authjs.dev/)**: Autenticação para a Web.
-- ⚡ **[Firebase](https://firebase.google.com/)**: É uma plataforma de desenvolvimento de aplicativos móveis e web fornecida pelo Google.
+- ⚛️ **[React](https://reactjs.org/)**: Biblioteca para construção de interfaces.
+- ⏭️ **[Next.js](https://nextjs.org/)**: Framework para renderização do lado do servidor.
+- 🎨 **[TailwindCSS](https://tailwindcss.com/)**: Framework CSS utilitário.
+- 🔐 **[Auth.js](https://authjs.dev/)**: Autenticação para aplicações Web.
+- ⚡ **[Firebase](https://firebase.google.com/)**: Plataforma para backend e notificações.
+
 
 ## 🚀 Como executar o projeto
 
