@@ -33,10 +33,10 @@ O layout da aplicação está disponível no [Figma](https://www.figma.com/desig
 <p align="justify">Este projeto utiliza um conjunto de tecnologias modernas para garantir uma aplicação eficiente e escalável, incluindo:</p>
 
 - ⚛️ **[React](https://reactjs.org/)**: Biblioteca JavaScript para construção de interfaces de usuário.
-- ⚡ **[Next.js](https://nextjs.org/)**: Ferramenta de build rápida para desenvolvimento frontend.
+- ⏭️ **[Next.js](https://nextjs.org/)**: Ferramenta de build rápida para desenvolvimento frontend.
 - 🎨 **[TailwindCSS](https://tailwindcss.com/)**: Framework CSS utilitário para estilização.
-- 🎨 **[Auth.js](https://authjs.dev/)**: Autenticação para a Web.
-- 🎨 **[Firebase](https://firebase.google.com/)**: É uma plataforma de desenvolvimento de aplicativos móveis e web fornecida pelo Google.
+- 🔐 **[Auth.js](https://authjs.dev/)**: Autenticação para a Web.
+- ⚡ **[Firebase](https://firebase.google.com/)**: É uma plataforma de desenvolvimento de aplicativos móveis e web fornecida pelo Google.
 
 ## 🚀 Como executar o projeto
 
@@ -103,8 +103,6 @@ AUTH_SECRET
 # Execute a aplicação em modo de desenvolvimento
 $ npm run dev
 ```
-
-# 💸 Como Monetizar
 
 # 🧑🏻‍💻 Autor
 
