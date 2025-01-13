@@ -1,9 +1,17 @@
-import Image from 'next/image'
+import { Hero } from './components/landing-page/header'
 
 export default function Home() {
   return (
     <>
-      <h1>Olá mundo</h1>
+      <div className="max-w-7xl mx-auto">
+        <Hero />
+      </div>
+
+      {/* 
+      <Hero/>
+      <VideoExplanation/>
+      <Princing/>
+      <FAQ/> */}
     </>
   )
 }
