@@ -7,7 +7,7 @@ import { TotalVisits } from '@/components/commons/total-visits'
 export default async function ProfilePage({
   params,
 }: {
-  params: { profileId: string }
+  params: Promise<{ profileId: string }>
 }) {
   const { profileId } = await params
 
