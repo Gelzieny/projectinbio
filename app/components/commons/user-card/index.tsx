@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Github, Instagram, Linkedin, Twitter } from 'lucide-react'
 
-import  { ProfileData } from '../../../server/get-profile-data'
+import { ProfileData } from '../../../server/get-profile-data'
 import { getDownloadURLFromPath } from '../../../lib/firebase'
 import { EditUserCard } from './edit-user-card'
 import { EditSocialLinks } from './edit-social-links'

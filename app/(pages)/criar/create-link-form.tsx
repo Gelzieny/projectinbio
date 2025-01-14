@@ -23,15 +23,12 @@ export  function CreateLinkForm() {
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
 
-    // Quando o usuario nao escreve um link
     if (link.length === 0) return setError('Escolha um link primeiro :)')
 
-    // Quando o usuario escolhe um link ja existente
     const isLinkTaken = await verifyLink(link)
 
     if (isLinkTaken) return setError('Desculpe, esse link já está em uso.')
 
-    // Criar o perfil
     const isLinkCreated = await createLink(link)
 
     if (!isLinkCreated)

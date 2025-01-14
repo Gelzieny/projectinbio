@@ -3,7 +3,11 @@
 import { useRouter } from 'next/navigation'
 import { ArrowUpFromLine, Plus } from 'lucide-react'
 import React, { startTransition, useState } from 'react'
-import { compressFiles, handleImageInput } from '../../lib/utils'
+import {
+  compressFiles,
+  handleImageInput,
+  triggerImageInput,
+} from '../../lib/utils'
 import { createProject } from '../../actions/create-project'
 import { Modal } from '../../components/ui/modal'
 import { TextInput } from '../../components/ui/text-input'
