@@ -1,6 +1,10 @@
-import { TextInput } from '@/components/ui/text-input'
-import { Button } from '@/components/ui/button'
-import { TotalVisits } from '@/components/commons/total-visits'
+import { ProjectCard } from "../../commons/project-card";
+import { TotalVisits } from "../../commons/total-visits";
+import { UserCard } from "../../commons/user-card";
+import { Button } from "../../ui/button";
+import { TextInput } from "../../ui/text-input";
+
+
 export function Hero() {
   return (
     <div className="flex ">

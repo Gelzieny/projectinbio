@@ -13,7 +13,7 @@ export function ProjectCard({
   isOwner: boolean
   img: string
 }) {
-  const formattedUrl = formatUrl(project.projectUrl)
+  const formattedUrl = project.projectUrl ? formatUrl(project.projectUrl) : '#'
 
   function handleClick() {
     console.log('clicked') // TODO: implementar analytics
