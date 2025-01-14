@@ -2,12 +2,12 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 
 import { auth } from '@/lib/auth'
-import { NewProject } from './new-project'
 import { getDownloadURLFromPath } from '@/lib/firebase'
-import { UserCard } from '@/components/commons/user-card'
 import { TotalVisits } from '@/components/commons/total-visits'
 import { ProjectCard } from '../../components/commons/project-card'
 import { getProfileData, getProfileProjects } from '@/server/get-profile-data'
+import NewProject from './new-project'
+import { UserCard } from '../../components/commons/user-card'
 
 export default async function ProfilePage({
   params,

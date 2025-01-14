@@ -9,7 +9,7 @@ import { TextInput } from '@/components/ui/text-input'
 import { verifyLink } from '../../actions/verify-link'
 import { createLink } from '../../actions/create-link'
 
-export default function CreateLinkForm() {
+export  function CreateLinkForm() {
   const router = useRouter()
 
   const [link, setLink] = useState('')

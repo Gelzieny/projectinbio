@@ -9,7 +9,7 @@ import { Button } from '../../ui/button'
 import { TextArea } from '../../ui/text-area'
 import { TextInput } from '../../ui/text-input'
 import { saveProfile } from '../../../actions/save-profile'
-import type { ProfileData } from '../../../server/get-profile-data'
+import  { ProfileData } from '../../../server/get-profile-data'
 import { compressFiles, handleImageInput } from '../../../lib/utils'
 
 export function EditUserCard({
