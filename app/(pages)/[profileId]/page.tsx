@@ -1,8 +1,13 @@
 import Link from 'next/link'
+import { notFound } from 'next/navigation'
+
+import { auth } from '@/lib/auth'
+import { NewProject } from './new-project'
+import { getDownloadURLFromPath } from '@/lib/firebase'
 import { UserCard } from '@/components/commons/user-card'
-import { ProjectCard } from '@/components/commons/project-card'
-import { Plus } from 'lucide-react'
 import { TotalVisits } from '@/components/commons/total-visits'
+import { ProjectCard } from '../../components/commons/project-card'
+import { getProfileData, getProfileProjects } from '@/server/get-profile-data'
 
 export default async function ProfilePage({
   params,
@@ -10,6 +15,22 @@ export default async function ProfilePage({
   params: Promise<{ profileId: string }>
 }) {
   const { profileId } = await params
+
+  const profileData = await getProfileData(profileId)
+
+  if (!profileData) return notFound()
+
+  // TODO: get projects
+
+  const projects = await getProfileProjects(profileId)
+
+  const session = await auth()
+
+  const isOwner = profileData.userId === session?.user?.id
+
+  // TODO: Adicionar page view
+
+  // Se o usuario não estiver mais no trial, nao deixar ver o projeto. Redirecionar para upgrade
 
   return (
     <div className="relative h-screen flex p-20 overflow-hidden">
@@ -25,20 +46,16 @@ export default async function ProfilePage({
         <UserCard />
       </div>
       <div className="w-full flex justify-center content-start gap-4 flex-wrap overflow-y-auto pt-4">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <button
-          type="button"
-          className="w-[340px] h-[132px] rounded-[20px] bg-background-secondary flex items-center gap-2 justify-center hover:border hover:border-dashed border-border-secondary"
-        >
-          <Plus className="size-10 text-accent-green" />
-          <span>Novo projeto</span>
-        </button>
+        {projects.map(async project => (
+          <ProjectCard
+            key={project.id}
+            project={project}
+            isOwner={isOwner}
+            img={(await getDownloadURLFromPath(project.imagePath)) || ''}
+          />
+        ))}
+
+        {isOwner && <NewProject profileId={profileId} />}
       </div>
       <div className="absolute bottom-4 right-0 left-0 w-min mx-auto">
         <TotalVisits />

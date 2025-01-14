@@ -8,10 +8,6 @@ export function TotalVisits() {
         <span className="text-3xl font-bold">12342</span>
         <TrendingUp />
       </div>
-      {/* <div className="flex items-center gap-2">
-        <button>Portal</button>
-        <button>Sair</button>
-      </div> */}
     </div>
   )
 }
